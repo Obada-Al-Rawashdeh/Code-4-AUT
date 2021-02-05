@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/very_important_website">
+        <menu>
+            <item android:id="@+id/website"
+                android:icon="@drawable/ic_www"
+                android:title="@string/website"/>
+            <item android:id="@+id/gate"
+                android:icon="@drawable/ic_door"
+                android:title="@string/student_gate"/>
+        </menu>
+    </item>
+    <item android:title="@string/phone_and_email">
+        <menu>
+            <item android:id="@+id/phone"
+                android:icon="@drawable/ic_local_phone_black_24dp"
+                android:title="@string/phone"/>
+            <item android:id="@+id/eemail"
+                android:icon="@drawable/ic_email_black_24dp"
+                android:title="@string/email"/>
+        </menu>
+    </item>
+    <item android:title="@string/social_media">
+        <menu>
+            <item android:id="@+id/facebook"
+                android:icon="@drawable/ic_facebook"
+                android:title="@string/facebook"/>
+            <item android:id="@+id/twitter"
+                android:icon="@drawable/ic_twitter"
+                android:title="@string/twitter"/>
+            <item android:id="@+id/instgram"
+                android:icon="@drawable/ic_instagram"
+                android:title="@string/instgram"/>
+        </menu>
+    </item>
+</menu>

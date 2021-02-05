@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633170149618",
+    "firebase_url": "https://retreivedata-ed3f1.firebaseio.com",
+    "project_id": "retreivedata-ed3f1",
+    "storage_bucket": "retreivedata-ed3f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633170149618:android:7ee34f140cad3909c8906b",
+        "android_client_info": {
+          "package_name": "com.obadarawashdeh.retreivedata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633170149618-15iokomue9bjeuf6tgd73o4303ljrc87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBixcgR64RtOvkEU-0mIjhdATpfwxsYeNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633170149618-15iokomue9bjeuf6tgd73o4303ljrc87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

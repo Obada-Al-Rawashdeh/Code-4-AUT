@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_activity"
+    android:weightSum="5.5"
+    tools:context=".Activity.Admin">
+
+    <ImageView
+
+        android:tint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_admin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_16sdp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="@string/admin"
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/white"/>
+
+    <GridLayout
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="@dimen/_22sdp"
+        android:rowCount="2"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/newsAdmin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="@dimen/_14sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/_3sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:tint="@color/blue"
+                    android:layout_weight="0.7"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_news"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_weight="0.3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="@string/news"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_16sdp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/roomsAdmin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="@dimen/_14sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/_3sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:tint="@color/blue"
+                    android:layout_weight="0.7"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_classroom"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_weight="0.3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="@string/rooms"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_16sdp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_columnSpan="2"
+            android:id="@+id/emailsAdmin"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_rowWeight="1"
+            android:layout_margin="@dimen/_14sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/_3sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:tint="@color/blue"
+                    android:layout_weight="0.7"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_weight="0.3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_16sdp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</LinearLayout>

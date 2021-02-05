@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_activity"
+    tools:context=".Activity.GpaCalculator">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_4sdp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.625">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_11sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="7">
+
+            <EditText
+                android:id="@+id/smark"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background"
+                android:ems="10"
+                android:hint="@string/semester_average"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/_6sdp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/shour"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background"
+                android:ems="10"
+                android:hint="@string/semester_hours"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/_6sdp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/pgpa"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background"
+                android:ems="10"
+                android:hint="@string/previous_gpa"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/_6sdp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/phour"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background"
+                android:ems="10"
+                android:hint="@string/hours_in_previous_gpa"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/_6sdp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:maxLength="4"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <Button
+                android:id="@+id/gpaCal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/calculate"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/semestercla"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:text="@string/calculate_the_semester_average"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_calculator" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/gpa_calculator"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

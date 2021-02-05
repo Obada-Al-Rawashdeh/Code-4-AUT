@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_4sdp"
+    android:layoutDirection="ltr"
+    app:contentPadding="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iImageView"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_loader"
+            android:scaleType="centerCrop" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/iDescriptionTv"
+            android:text="descriptionn"
+            android:textSize="@dimen/_15sdp"
+            app:trimExpandedText="@string/read_less"
+            app:trimCollapsedText="@string/read_more"
+            app:trimMode="trimModeLength"
+            app:trimLength="99999999"
+            android:textColor="#000000"
+            app:colorClickableText="#00B8D4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
